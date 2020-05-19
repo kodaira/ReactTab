@@ -9,7 +9,9 @@ import LinkingConfiguration from './navigation/LinkingConfiguration';
 
 const Stack = createStackNavigator();
 
-export default function App(props) {
+//export default function App(props) {
+//const App = (props) => {
+const App = () => {
   const isLoadingComplete = useCachedResources();
 
   if (!isLoadingComplete) {
@@ -34,3 +36,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
 });
+
+export default App;

@@ -56,7 +56,7 @@ HomeScreen.navigationOptions = {
   header: null,
 };
 
-function DevelopmentModeNotice() {
+const DevelopmentModeNotice = () => {
   if (__DEV__) {
     const learnMoreButton = (
       <Text onPress={handleLearnMorePress} style={styles.helpLinkText}>
@@ -79,11 +79,11 @@ function DevelopmentModeNotice() {
   }
 }
 
-function handleLearnMorePress() {
+const handleLearnMorePress = () => {
   WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/workflow/development-mode/');
 }
 
-function handleHelpPress() {
+const handleHelpPress = () => {
   WebBrowser.openBrowserAsync(
     'https://docs.expo.io/versions/latest/get-started/create-a-new-app/#making-your-first-change'
   );
